@@ -1,4 +1,5 @@
 sudo: required
+
 services:
   - docker
 
@@ -7,3 +8,5 @@ before_install:
 
 script:
   - docker run -e CI=true Gargi15/docker-react npm run test
+
+language: generic 
